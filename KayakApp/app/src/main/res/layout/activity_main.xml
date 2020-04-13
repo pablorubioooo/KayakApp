@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pablo.kayakapp.main.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/TittleApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="80dp"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:text="Kayak
+            App"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:textColor="#000"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/BtnTraining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entrenar"
+            android:textSize="20dp"
+            android:layout_margin="20dp"
+            android:onClick="training"
+            android:background="@drawable/btn_style"
+            />
+
+        <Button
+            android:id="@+id/BtnData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sesiones"
+            android:textSize="20dp"
+            android:layout_margin="20dp"
+            android:onClick="data"
+            android:background="@drawable/btn_style"
+            />
+
+        <Button
+            android:id="@+id/BtnPlanning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Planificar"
+            android:textSize="20dp"
+            android:layout_margin="20dp"
+            android:onClick="planning"
+            android:background="@drawable/btn_style"
+            />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

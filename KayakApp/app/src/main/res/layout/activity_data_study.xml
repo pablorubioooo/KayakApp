@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pablo.kayakapp.main.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/TittleTraining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="60dp"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:text="Training"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#000"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/BtnV-T"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Velocidad-Tiempo"
+                android:textSize="20dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/btn_style2"
+                />
+
+            <Button
+                android:id="@+id/BtnV-F"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Velocidad-Frecuencia"
+                android:textSize="20dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/btn_style2"
+                />
+
+            <Button
+                android:id="@+id/BtnD-T"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Distancia-Tiempo"
+                android:textSize="20dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/btn_style2"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

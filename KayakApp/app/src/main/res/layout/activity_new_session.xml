@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="fill_parent">
+
+        <!--Put form controls here-->
+
+        <TextView
+            android:id="@+id/TextViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Introduzca los datos del entrenamiento
+            "
+            android:textSize="10pt"
+            android:textStyle="italic"
+            android:typeface="serif"
+            android:textColor="@android:color/black">
+        </TextView>
+
+        <TextView
+            android:id="@+id/Sep1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="5dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción"
+            android:textAlignment="center"
+            android:textSize="10pt"
+            android:textStyle="italic"
+            android:typeface="serif"
+            android:textColor="@android:color/black"
+            android:background="@drawable/btn_style2"
+            />
+
+        <EditText
+            android:id="@+id/EditTextTittle"
+            android:layout_height="wrap_content"
+            android:hint="Título"
+            android:inputType="text"
+            android:layout_width="fill_parent">
+        </EditText>
+
+        <EditText
+            android:id="@+id/EditTextRitmo"
+            android:layout_height="wrap_content"
+            android:hint="Ritmos"
+            android:inputType="text"
+            android:layout_width="fill_parent">
+        </EditText>
+
+        <TextView
+            android:id="@+id/Sep2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextBloque"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bloques"
+            android:textAlignment="center"
+            android:textSize="10pt"
+            android:textStyle="italic"
+            android:typeface="serif"
+            android:textColor="@android:color/black"
+            android:background="@drawable/btn_style2"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            >
+
+            <Button
+                android:id="@+id/BtnMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_style2"
+                android:text=" - "
+                android:textSize="20dp"
+                android:layout_weight="3"
+                />
+
+        <EditText
+            android:id="@+id/EditTextBloque"
+            android:layout_height="wrap_content"
+            android:hint="Número de bloques"
+            android:inputType="numberDecimal"
+            android:layout_width="fill_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            >
+        </EditText>
+
+            <Button
+                android:id="@+id/BtnPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" + "
+                android:textSize="20dp"
+                android:background="@drawable/btn_style2"
+                android:layout_weight="3"
+                />
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/TextBloqueDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descanso"
+            android:textAlignment="center"
+            android:textSize="9pt"
+            android:textStyle="italic"
+            android:typeface="serif"
+            android:textColor="@android:color/black"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="10"
+            >
+
+            <Button
+                android:id="@+id/BtnDMMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_style2"
+                android:text=" - "
+                android:textSize="20dp"
+                android:layout_weight="3"
+                />
+
+            <EditText
+                android:id="@+id/EditTextDesBloqueM"
+                android:layout_height="wrap_content"
+                android:hint="Minutos"
+                android:inputType="numberDecimal"
+                android:layout_width="fill_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                >
+            </EditText>
+
+            <Button
+                android:id="@+id/BtnDMPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" + "
+                android:textSize="20dp"
+                android:background="@drawable/btn_style2"
+                android:layout_weight="3"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   "
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:layout_weight="1"
+        >
+            <Button
+                android:id="@+id/BtnDSMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_style2"
+                android:text=" - "
+                android:textSize="20dp"
+                android:layout_weight="3"
+                />
+
+            <EditText
+                android:id="@+id/EditTextDesBloqueS"
+                android:layout_height="wrap_content"
+                android:hint="Segundos"
+                android:inputType="numberDecimal"
+                android:layout_width="fill_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                >
+            </EditText>
+
+            <Button
+                android:id="@+id/BtnDSPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" + "
+                android:textSize="20dp"
+                android:background="@drawable/btn_style2"
+                android:layout_weight="3"
+                />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+        <TextView
+            android:id="@+id/Sep3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextSerie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Series"
+            android:textAlignment="center"
+            android:textSize="10pt"
+            android:textStyle="italic"
+            android:typeface="serif"
+            android:textColor="@android:color/black"
+            android:background="@drawable/btn_style2"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            >
+
+            <Button
+                android:id="@+id/BtnSMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_style2"
+                android:text=" - "
+                android:textSize="20dp"
+                android:layout_weight="3"
+                />
+
+            <EditText
+                android:id="@+id/EditTextSerie"
+                android:layout_height="wrap_content"
+                android:hint="Número de series"
+                android:inputType="numberDecimal"
+                android:layout_width="fill_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                >
+            </EditText>
+
+            <Button
+                android:id="@+id/BtnSPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" + "
+                android:textSize="20dp"
+                android:background="@drawable/btn_style2"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TextSerieDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descanso"
+            android:textAlignment="center"
+            android:textSize="9pt"
+            android:textStyle="italic"
+            android:typeface="serif"
+            android:textColor="@android:color/black"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="10"
+                >
+
+                <Button
+                    android:id="@+id/BtnDMSMinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_style2"
+                    android:text=" - "
+                    android:textSize="20dp"
+                    android:layout_weight="3"
+                    />
+
+                <EditText
+                    android:id="@+id/EditTextDesSeriesM"
+                    android:layout_height="wrap_content"
+                    android:hint="Minutos"
+                    android:inputType="numberDecimal"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    >
+                </EditText>
+
+                <Button
+                    android:id="@+id/BtnDMSPlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" + "
+                    android:textSize="20dp"
+                    android:background="@drawable/btn_style2"
+                    android:layout_weight="3"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   "
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                android:layout_weight="1"
+                >
+                <Button
+                    android:id="@+id/BtnDSSMinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_style2"
+                    android:text=" - "
+                    android:textSize="20dp"
+                    android:layout_weight="3"
+                    />
+
+                <EditText
+                    android:id="@+id/EditTextDesSeriesS"
+                    android:layout_height="wrap_content"
+                    android:hint="Segundos"
+                    android:inputType="numberDecimal"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    >
+                </EditText>
+
+                <Button
+                    android:id="@+id/BtnDSSPlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" + "
+                    android:textSize="20dp"
+                    android:background="@drawable/btn_style2"
+                    android:layout_weight="3"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Sep4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="5dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextSerieTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiempo Series"
+            android:textAlignment="center"
+            android:textSize="9pt"
+            android:textStyle="italic"
+            android:typeface="serif"
+            android:textColor="@android:color/black"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="10"
+                >
+
+                <Button
+                    android:id="@+id/BtnTMMinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_style2"
+                    android:text=" - "
+                    android:textSize="20dp"
+                    android:layout_weight="3"
+                    />
+
+                <EditText
+                    android:id="@+id/EditTextTimeSeriesM"
+                    android:layout_height="wrap_content"
+                    android:hint="Minutos"
+                    android:inputType="numberDecimal"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    >
+                </EditText>
+
+                <Button
+                    android:id="@+id/BtnTMPlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" + "
+                    android:textSize="20dp"
+                    android:background="@drawable/btn_style2"
+                    android:layout_weight="3"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   "
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                android:layout_weight="1"
+                >
+                <Button
+                    android:id="@+id/BtnTSMinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_style2"
+                    android:text=" - "
+                    android:textSize="20dp"
+                    android:layout_weight="3"
+                    />
+
+                <EditText
+                    android:id="@+id/EditTextTimeSeriesS"
+                    android:layout_height="wrap_content"
+                    android:hint="Segundos"
+                    android:inputType="numberDecimal"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    >
+                </EditText>
+
+                <Button
+                    android:id="@+id/BtnTSPlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" + "
+                    android:textSize="20dp"
+                    android:background="@drawable/btn_style2"
+                    android:layout_weight="3"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
